@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.menu{
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.M-3{
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    gap: 3px;
+   text-align: center;
+}
+
+.menu h3{
+    color: black;
+}
+
+.menu h2{
+    color: red;
+    font-size: 18px;
+}
+
+.Text_Area{
+    height: 110px;
+    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 550px;
+  margin-top: 100px;
+}
+
+.T-2{
+   z-index: 7;
+}
+
+.MP-1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.MP-2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: grey;
+    -webkit-text-fill-color: white;
+    animation-name: move_rev;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+   
+}
+@keyframes move_rev{
+    from{
+       
+        transform: translateX(calc(-100% - 20px  ));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.MP-3{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 64%;
+    
+}
+.middle_portion{
+    font-size: 50px;
+    font-family: Gilroy;
+  
+}
+.image{
+    height: 500px;
+    width: 350px;
+
+    position: absolute;
+    left: 43%;
+    top: 15%;
+   
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom{
+    margin-top: 310px;
+    width: 20.4%;
+}
+.bottom p{
+    font-weight: 700;
+}
